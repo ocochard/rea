@@ -979,7 +979,7 @@ describe("Ghidra installation version admission", () => {
     },
     {
       name: "different Ghidra line",
-      readText: () => "application.version=12.2.0\napplication.java.min=21\n",
+      readText: () => "application.version=13.0.0\napplication.java.min=21\n",
       probeJava: () => javaProbeOk<GhidraJavaObservation>(JAVA),
       failed: "version",
       code: "unsupported_version",
